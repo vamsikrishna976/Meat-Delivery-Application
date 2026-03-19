@@ -25,3 +25,34 @@
         padding-top: 4rem;
     }
 }
+
+/* Tablet responsive */
+@media (max-width: 600px) {
+    .app-download{
+        padding-top: 3rem;
+        font-size: 18px;
+    }
+    .app-download-platform{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .app-download-platform img{
+        width: 200px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .app-download{
+        padding-top: 2rem;
+        font-size: 16px;
+    }
+    .app-download-platform{
+        gap: 10px;
+    }
+    .app-download-platform img{
+        width: 150px;
+        max-width: 100%;
+    }
+}

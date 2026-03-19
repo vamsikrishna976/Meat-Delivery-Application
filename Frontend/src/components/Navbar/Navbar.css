@@ -118,3 +118,40 @@
     display: none;
   }
 }
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .navbar {
+    height: 3.5rem;
+    padding: 0 10px;
+  }
+  .navbar .logo {
+    width: 90px;
+  }
+  .navbar-right {
+    gap: 15px;
+  }
+  .navbar-right img {
+    width: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 3rem;
+    padding: 0 8px;
+  }
+  .navbar .logo {
+    width: 70px;
+  }
+  .navbar-right {
+    gap: 10px;
+  }
+  .navbar-right img {
+    width: 16px;
+  }
+  .navbar-right button {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+}

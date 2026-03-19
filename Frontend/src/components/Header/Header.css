@@ -53,6 +53,7 @@
   .header-contents {
     bottom: 70%;
     left: 5vw;
+    max-width: 80%;
   }
   .header-contents h2 {
     font-size: max(4.5vw, 15px);
@@ -63,5 +64,44 @@
   .header-contents button {
     padding: 1.5vw 2vw;
     font-size: max(1vw, 12px);
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 600px) {
+  .header {
+    height: 25vh;
+  }
+  .header-contents {
+    bottom: 65%;
+    left: 3vw;
+  }
+  .header-contents h2 {
+    font-size: 18px;
+  }
+  .header-contents button {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .header {
+    height: 20vh;
+  }
+  .header-contents {
+    bottom: 60%;
+    left: 2vw;
+    max-width: 90%;
+    gap: 0.5vw;
+  }
+  .header-contents h2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .header-contents button {
+    padding: 6px 12px;
+    font-size: 10px;
   }
 }

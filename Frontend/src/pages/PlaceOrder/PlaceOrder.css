@@ -52,3 +52,56 @@ hr{
         margin-top: 30px;
     }
 }
+
+/* Tablet responsive */
+@media (max-width: 600px) {
+    .place-order{
+        width: 90%;
+        padding-top: 5.5rem;
+        gap: 30px;
+    }
+    .place-order-left{
+        max-width: 100%;
+    }
+    .place-order-left .title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .place-order-left input{
+        padding: 8px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    .place-order-right{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .place-order{
+        width: 95%;
+        padding-top: 5rem;
+        gap: 20px;
+    }
+    .place-order-left .title{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .place-order-left input{
+        padding: 6px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .place-order-left .multi-fields{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .place-order .cart-total button{
+        width: 100%;
+        margin-top: 20px;
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+}

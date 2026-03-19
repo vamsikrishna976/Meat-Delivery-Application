@@ -3,6 +3,21 @@
     width: 80%;
     margin: auto;
 }
+
+/* Tablet responsive */
+@media (max-width: 768px) {
+    .cart{
+        width: 90%;
+        padding-top: 6rem;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .cart{
+        width: 95%;
+        padding-top: 5.5rem;
+    }
 .cart-items-title{
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
@@ -98,5 +113,92 @@
     }
     .cart-promocode{
         justify-content: start;
+    }
+}
+
+/* Tablet responsive */
+@media (max-width: 600px) {
+    .cart{
+        width: 90%;
+        padding-top: 5.5rem;
+    }
+    .cart-items-title{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 10px;
+    }
+    .cart-items-item{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .cart-items-item img{
+        width: 35px;
+    }
+    .cart-bottom{
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .cart-total button{
+        width: 100%;
+    }
+    .cart-promocode-input{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cart-promocode-input input{
+        width: 100%;
+    }
+    .cart-promocode-input button{
+        width: 100%;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .cart{
+        width: 95%;
+        padding-top: 5rem;
+    }
+    .cart-items-title{
+        display: none;
+    }
+    .cart-items-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        grid-template-columns: unset;
+        margin: 15px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .cart-items-item img{
+        width: 30px;
+    }
+    .cart-bottom{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .cart-total{
+        gap: 10px;
+    }
+    .cart-total-details{
+        font-size: 12px;
+    }
+    .cart-total button{
+        width: 100%;
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+    .cart-promocode p{
+        font-size: 12px;
+    }
+    .cart-promocode-input input{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .cart-promocode-input button{
+        padding: 8px;
+        font-size: 12px;
     }
 }

@@ -1,7 +1,6 @@
 # Meat-Delivery-Application
 Meat Delivery Application This repository contains the source code for the Meat Delivery Application, a web and mobile platform for seamless ordering and delivery of fresh meat. The project is built with a blend of modern technologies and showcases a user-friendly interface and robust functionality.  Key Features: Frontend end developer
 
-
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
 
@@ -59,3 +58,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 npm run build fails to minify
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+vercel login

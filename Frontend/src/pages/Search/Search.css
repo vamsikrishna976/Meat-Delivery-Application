@@ -54,5 +54,52 @@
     }
 }
 
+/* Tablet responsive */
+@media (max-width: 600px) {
+    .search{
+        padding-top: 5.5rem;
+    }
+    .search-items{
+        width: 90%;
+    }
+    .search-items input{
+        height: 50px;
+        font-size: 14px;
+    }
+    .search-results{
+        width: 90%;
+        grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+        gap: 15px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .search{
+        padding-top: 5rem;
+    }
+    .search-items{
+        width: 95%;
+    }
+    .search-items img{
+        padding: 8px 15px;
+        width: 20px;
+    }
+    .search-items input{
+        height: 45px;
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .search hr{
+        width: 95%;
+    }
+    .search-results{
+        width: 95%;
+        grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+        gap: 12px;
+        row-gap: 30px;
+    }
+}
+
 
 
