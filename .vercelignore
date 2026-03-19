@@ -1,7 +1,5 @@
 Backend
 .git
 .gitignore
-README.md
 node_modules
-.env
 npm-debug.log*
