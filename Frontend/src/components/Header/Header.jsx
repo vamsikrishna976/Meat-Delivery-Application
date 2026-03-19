@@ -3,13 +3,19 @@ import './Header.css'
 
 
 const Header = () => {
+  const handleViewMenu = () => {
+    const element = document.getElementById('explore-menu');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <div className='header'>
       <div className="header-contents">
         <h2>Order your favourite food here</h2>
-        <p>"Indulge Your Palate: Welcome to Our Culinary Haven!"
-"Discover Delectable Delights: Your Dining Adventure Begins Here!"</p>
-        <button><a href="#explore-menu">View Menu</a></button>
+        <p>Indulge Your Palate: Welcome to Our Culinary Haven! Discover Delectable Delights: Your Dining Adventure Begins Here!</p>
+        <button onClick={handleViewMenu}>View Menu</button>
       </div>
     </div>
   )
