@@ -115,16 +115,4 @@
     .explore-menu hr{
         width: 95%;
     }
-}   
-    .explore-menu-list{
-        padding: 20px 3px;
-        gap: 9px;
-        width: 90%;
-    }
-    .explore-menu-list-item img{
-        cursor: none;
-    }
-    .explore-menu-list-item p{
-        cursor: none;
-    }
 }
