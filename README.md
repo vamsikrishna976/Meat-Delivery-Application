@@ -1,62 +1,187 @@
-# Meat-Delivery-Application
-Meat Delivery Application This repository contains the source code for the Meat Delivery Application, a web and mobile platform for seamless ordering and delivery of fresh meat. The project is built with a blend of modern technologies and showcases a user-friendly interface and robust functionality.  Key Features: Frontend end developer
+# Meat Delivery Application
 
-Getting Started with Create React App
-This project was bootstrapped with Create React App.
+A modern, responsive web application for ordering and delivering fresh meat products. This project features a full-stack architecture with a React frontend and Node.js/Express backend.
 
-Available Scripts
-In the project directory, you can run:
+## 🌐 Live Demo
 
-npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.
+[View Live Application](https://meat-delivery-application-vamsikrishna976s-projects.vercel.app)
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+## ✨ Features
 
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+- **Responsive Design**: Fully optimized for mobile (480px), tablet (600px-768px), and desktop (1050px+) screens
+- **User Authentication**: Login and signup functionality with token-based security
+- **Menu Explorer**: Browse and search available meat products with category filtering
+- **Shopping Cart**: Add/remove items from cart with real-time updates
+- **Order Management**: Place orders with detailed booking information
+- **BMI Calculator**: Health-focused feature for users to calculate BMI
+- **Booking System**: Schedule meat deliveries with custom dates and times
+- **Nutrition Tracking**: Access nutritional information and macro tracking
+- **Responsive Dashboard**: View order history, bookings, and notifications
 
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+### Frontend
+- **React 18.2.0** - UI library
+- **Redux** - State management
+- **CSS3** - Responsive styling with media queries
+- **Create React App** - Build tooling
 
-See the section about deployment for more information.
+### Backend
+- **Node.js** - Runtime environment
+- **Express.js** - Web framework
+- **JWT** - Authentication
+- **CORS** - Cross-origin resource sharing
 
-npm run eject
-Note: this is a one-way operation. Once you eject, you can't go back!
+### Deployment
+- **Vercel** - Frontend hosting
+- **GitHub** - Version control
 
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+## 📁 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Meat-Delivery-Application/
+├── Frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/          # Reusable UI components
+│   │   ├── pages/              # Page components
+│   │   ├── auth/               # Login & signup
+│   │   ├── context/            # React context
+│   │   ├── store/              # Redux store
+│   │   ├── services/           # API services
+│   │   └── App.js
+│   ├── package.json
+│   └── README.md
+├── Backend/
+│   ├── src/
+│   │   ├── config/             # Configuration files
+│   │   ├── Controllers/        # Route controllers
+│   │   ├── Middleware/         # Express middleware
+│   │   ├── models/             # Data models
+│   │   ├── routes/             # API routes
+│   │   ├── validations/        # Data validation
+│   │   ├── index.js
+│   │   └── server.js
+│   ├── package.json
+│   └── README.md
+└── README.md
+```
 
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-Learn More
-You can learn more in the Create React App documentation.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
 
-To learn React, check out the React documentation.
+### Installation
 
-Code Splitting
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/vamsikrishna976/Meat-Delivery-Application.git
+   cd Meat-Delivery-Application
+   ```
 
-Analyzing the Bundle Size
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+2. **Frontend Setup**
+   ```bash
+   cd Frontend
+   npm install
+   npm start
+   ```
+   The frontend will run at: `http://localhost:3000`
 
-Making a Progressive Web App
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+3. **Backend Setup**
+   ```bash
+   cd Backend
+   npm install
+   npm start
+   ```
+   The backend will run at: `http://localhost:5000`
 
-Advanced Configuration
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## 📜 Available Scripts
 
-Deployment
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Frontend
+```bash
+npm start         # Run in development mode
+npm run build     # Create production build
+npm test          # Run tests
+```
 
-npm run build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Backend
+```bash
+npm start         # Start the server
+npm run dev       # Run with nodemon (auto-reload)
+```
 
-vercel login
+## 🎨 Responsive Breakpoints
+
+- **Mobile**: 0 - 480px
+- **Tablet**: 481px - 768px
+- **Desktop**: 769px and above
+
+## 🔐 Environment Variables
+
+Create `.env` files in both Frontend and Backend directories:
+
+### Frontend/.env
+```
+REACT_APP_API_URL=http://localhost:5000
+```
+
+### Backend/.env
+```
+PORT=5000
+JWT_SECRET=your_secret_key
+DB_URL=your_database_url
+```
+
+## 🚢 Deployment
+
+### Frontend (Vercel)
+```bash
+vercel --prod
+```
+
+The project automatically deploys to Vercel when pushing to the main GitHub branch.
+
+### Backend
+Deploy to your preferred Node.js hosting (Heroku, AWS, DigitalOcean, etc.)
+
+## 📝 Git Workflow
+
+```bash
+# Create feature branch
+git checkout -b feature/your-feature
+
+# Make changes and commit
+git add .
+git commit -m "Add your feature"
+
+# Push to GitHub
+git push origin feature/your-feature
+
+# Create Pull Request on GitHub
+```
+
+## 🐛 Known Issues & Fixes
+
+- **CSS Media Queries**: All responsive breakpoints have been tested and optimized
+- **ESLint Configuration**: Custom rules configured to handle specific warnings
+- **Build Optimization**: Production builds are minified and optimized for deployment
+
+## 📞 Support
+
+For issues or questions, please create an GitHub issue or contact the development team.
+
+## 📄 License
+
+This project is licensed under the MIT License - see LICENSE file for details.
+
+## 👨‍💻 Author
+
+Vamsikrishna976 - [GitHub Profile](https://github.com/vamsikrishna976)
+
+---
+
+**Last Updated**: March 2026
+**Version**: 1.0.0
